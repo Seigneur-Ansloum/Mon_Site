@@ -1,0 +1,28 @@
+header {
+width: 100%;
+  height: 100px;
+   background-image: linear-gradient(
+        #f3c5bd 0%,
+        #ea2803 0%,
+        #ea2803 35%,
+        #ff6600 35%,
+        #ff6600 68%,
+        #0700ea 68%,
+        #0700ea 100%
+      );
+  }
+
+body { background-color: black;
+        background-image: url("../img/background_img_1.jpg");
+}
+
+.titre_produit_1 {
+  text-align: center;
+}
+
+/*  #1973c1 10px,
+  #6d1599 10px,
+  #ce1a0a 10px,
+  #ef8c13 10px,
+  #ffe20a 10px,
+  */

@@ -1,0 +1,13 @@
+body{
+
+}
+
+.menufooter {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 16px;
+  background-color: #aac4b7;
+  align-items: center;
+  height: 40px;
+}

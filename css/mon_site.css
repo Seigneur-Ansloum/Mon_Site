@@ -40,7 +40,7 @@ header {
         )
       }
 
-      .titre_1 {
+.titre_1 {
         color: black;
         padding-top: 2.5%;
         font-size: 250%;
@@ -53,87 +53,64 @@ header {
 body { background-color: black;
 }
 
-nav {
-      width: auto;
-      height: 100%;
-}
+/*nav {
+      position: absolute;
+      padding-left: 300px;
+      width: 800px;
+      height: 900px;
+}*/
 
 .scrollmenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  list-style: none;
-  border: 5px solid black;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  width: 19em;
   height: 100%;
-  max-width: 35%;
-  overflow: 300%;
-
-}
-.scrollmenu li a:hover {
-  background-color: grey;
-  color: white;
 }
 
-.scrollmenu li a.active {
-  background-color: #4CAF50;
-  color: white;
+.scrollmenu li {
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.scrollmenu li a {
-  color: black;
+.scrollmenu a {
+  background: #333;
+  border-bottom: 50px solid #393939;
+  color: #ccc;
   display: block;
-  justify-content: center;
-  align-items: flex-start;
+  margin: 0;
+  padding: 8px 12px;
   text-decoration: none;
-  padding: 8px 16px;
-  margin-left: -40px;
-  height: 125px;
-  border-bottom: 1px solid black;
+  font-weight: normal;
 }
 
-
-.scrollmenu .home_menu {
-  background-image: url('http://229immo.com/images/categories/maison-2.png?v=1484867424');
-  background-repeat: no-repeat;
-  background-size: 253px 150px;
-}
-
-.scrollmenu .news_menu  {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/48/Microsoft_Word_logo.png');
-  background-repeat: no-repeat;
-  background-size: 253px 150px;
-}
-
-.scrollmenu .contact_menu {
-  background-image: url('http://bc-plomberie.fr/wp-content/uploads/2015/10/bouton-contact.png');
-  background-repeat: no-repeat;
-  background-size: 253px 150px;
-}
-
-.scrollmenu .about_menu {
-  background-image: url('http://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-About-icon.png');
-  background-repeat: no-repeat;
-  background-size: 253px 150px;
+.scrollmenu a:hover {
+  /*background: url("/img/contact_Smenu.png") left center no-repeat;
+  color: #fff;*/
+  background: #000000;
+  background-image: url('img/contact_Smenu.png') left /*center*/ no-repeat;
+  /*background-repeat: no-repeat;
+    background-size: 260px 150px;*/
 }
 
 footer {
-  width: 100%;
-  position : absolute;
-  bottom: 0;
 }
 
 .menufooter {
   position: absolute;
   justify-content: space-between;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
   top: 100%;
-  padding-bottom: 8%;
+  padding-bottom: 8px;
   bottom: 0%;
   left: 0%;
   right: 0%;
   list-style-type: none;
   font-size: 20px;
   font-family: sans-serif;
-  background-color: red;
+  background-color: grey;
   height: 30px;
 }

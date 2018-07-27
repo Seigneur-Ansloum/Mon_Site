@@ -3,14 +3,20 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/mon_site.css">
+    <link rel="stylesheet" href="css/Slider.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		       crossorigin="anonymous">
+    </script>
     <meta charset= "utf-8"/>
     <title> Page d'acceuil </title>
   </head>
 <body>
     <header>
-      <div class="color_bar">
+      <div class="color_bar" align="top">
       <h1 class="titre_1" align="center" font-family="atari_full"> Borne d'arcade </h1>
-      <h2 class="menu_bar" align="center" font-size="80px"> produit </h2>
+      <h2 class="menu_bar" align="center" font-size="80px"> Réalisation </h2>
 <!--      <a href="page_produit_1.html">
           <img src="img/header_a.png">
         </a>  -->
@@ -19,7 +25,7 @@
     <div class="scrollmenu">
       <ul>
         <li class='home_menu'><a href='#'><span>Home</span></a>
-          <img class="img_menu" src="img/home_Smenu.png">
+          <img class="img_home" src="img/home_Smenu.png">
         </li>
         <li class='news_menu'><a href='#'><span>News</span></a>
           <img class="img_news" src="img/news_Smenu.png">
@@ -27,10 +33,44 @@
         <li class='contact_menu'><a href='#'><span>Contact</span></a>
           <img class="img_news" src="img/contact_Smenu.png">
         </li>
-        <li class='about_menu'><a href='#'><span>A propos</span></a>
+        <li class='about_menu'><a href='A_propos.html'><span>A propos</span></a>
           <img class="img_propos" src="img/about_Smenu.png">
         </li>
       </ul>
+    </div>
+
+    <div id="imgSlider">
+
+    </div>
+    <div id="container">
+
+      <h2>Fade Example</h2>
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-fade">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="img/banner01.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
+
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 320,
+            width       : 620,
+            responsive  : true
+          });
+
+        });
+      </script>
 
     <footer>
       <ul class="menufooter">
@@ -49,4 +89,6 @@
       </ul>
     </footer>
   </body>
+<script src="Slider.js"></script>
+<script src="Java.js"></script>
 </html>
